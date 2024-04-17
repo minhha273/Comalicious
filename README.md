@@ -34,28 +34,22 @@ python FMalGit.py -cfpullreq https://github.com/minhha273/project
 ```
 Here is the content of :
 
-![alt text](images/image.png)
+![image](https://github.com/minhha273/Comalicious/assets/93338351/83ca0221-374d-4b1d-97ae-5e194ee541d6)
 
-## Export to file
+It will scan pullrequests through the rules to check if any of our rules are violated. Then it will output the report output.html file
+
+![image](https://github.com/minhha273/Comalicious/assets/93338351/27cbcd45-d8c0-4d93-8dc0-811bead431eb)
+
+## Get file contains all file changes in commit
 ```
-python solution.py --changefile $change_file_path --rulefolder $rules_folder_path --outputfile $output_path
+python FMalGit.py -changes $github_link -hash $commit_hash
 ```
 where
-- `$change_file_path`: path of the change pull file
-- `$rules_folder_path`: path of the folder contains all file rules
-- `$output_path`: path of output file (default: `./output.txt`)
+- `$github_link`: github repository link
+### Example
+```
+python FMalGit.py -changes https://github.com/minhha273/project -hash 0da38b34e8bae189f41b42caa99b34c748b6d7dc
+```
+![image](https://github.com/minhha273/Comalicious/assets/93338351/0317c2cc-bf51-40f9-95d7-31ca9e7f7499)
 
-## Example
-### Export output with indicated output file
-```
-python solution.py --changefile '.\change_file_pull\project_change_pull.txt' --rulefolder .\rules --outputfile ./output1.txt
-```
-Here is result:
-![alt text](images/output1.png)
 
-### Export output with default output file
-```
-python solution.py --changefile '.\change_file_pull\project_change_pull.txt' --rulefolder .\rules
-```
-Here is result:
-![alt text](images/output.png)
