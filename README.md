@@ -1,7 +1,7 @@
 # Preparing
 Move to project folder
 ```
-cd project_VD
+cd Comalicious
 ```
 # Installation
 Use the package manager pip to install needed library in `requirements.txt`.
