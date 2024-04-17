@@ -1,0 +1,143 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Report Details</title>
+            <style>
+                .commit-details {
+                    display: none;
+                }
+            </style>
+            <script>
+            function toggleAllDetails() {
+                var commits = document.getElementsByClassName("commit-details");
+                for (var i = 0; i < commits.length; i++) {
+                    var commit = commits[i];
+                    if (commit.style.display === "none") {
+                        commit.style.display = "block";
+                    } else {
+                        commit.style.display = "none";
+                    }
+                }
+            }
+            </script>
+        </head>
+        <body>
+    <h1>Commit Scan Report - 2024-04-17 07:53:41</h1>
+        <div>
+            <button onclick="toggleAllDetails()">Show All Commits</button>
+        </div>
+    
+
+<div class="result commit-details" style="display: none;">
+<p><span style="color: red;">Pull Request SHA:</span>  157dc4ffea14d6a3dbda8ca098b2ca4d4d363f1f
+</p>
+<p>Author:  tsof-smoky
+</p>
+<p>Date:  2024-04-13 12:51:06</p>
+<p>State:  open
+File Change</p>
+<p>File Change:   md5.php</p>
+<p>rule_id: weak-crypto</p>
+<p>message: Detected usage of weak crypto function. Consider using stronger alternatives.</p>
+<p>cwe: ['CWE-328: Use of Weak Hash']</p>
+<hr>
+</div>
+
+
+
+<div class="result commit-details" style="display: none;">
+<p><span style="color: red;">Pull Request SHA:</span>  1d607e88408b5c6feb7380a249906225266c6f88
+</p>
+<p>Author:  tsof-smoky
+</p>
+<p>Date:  2024-04-13 12:49:11</p>
+<p>State:  open
+File Change</p>
+<p>File Change:   ftp.php</p>
+<p>rule_id: ftp-use</p>
+<p>message: FTP allows for unencrypted file transfers. Consider using an encrypted alternative.</p>
+<p>cwe: ['CWE-319: Cleartext Transmission of Sensitive Information']</p>
+<hr>
+</div>
+
+
+
+<div class="result commit-details" style="display: none;">
+<p><span style="color: red;">Pull Request SHA:</span>  9c625f73d4f6e8050869a784ad78a0d37dbf47fc
+</p>
+<p>Author:  tsof-smoky
+</p>
+<p>Date:  2024-04-13 12:46:26</p>
+<p>State:  open
+File Change</p>
+<p>File Change:   eval-user.php</p>
+<p>rule_id: eval-use</p>
+<p>message: Evaluating non-constant commands. This can lead to command injection.</p>
+<p>cwe: ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"]</p>
+<hr>
+</div>
+
+
+
+<div class="result commit-details" style="display: none;">
+<p>Pull Request SHA:  90da59c26ba70b1867ac2ab1e8925e15f6d135ad
+</p>
+<p>Author:  HellMap5
+</p>
+<p>Date:  2024-04-12 06:31:18</p>
+<p>State:  open
+File Change</p>
+<p>File Change:   md5.php</p>
+<p>No malicious commits were found</p>
+<hr>
+</div>
+
+
+
+<div class="result commit-details" style="display: none;">
+<p><span style="color: red;">Pull Request SHA:</span>  51687eeedd566a680741610f60a74fa0d2d4ae4c
+</p>
+<p>Author:  tsof-smoky
+</p>
+<p>Date:  2024-04-12 06:22:50</p>
+<p>State:  open
+File Change</p>
+<p>File Change:   sum.php</p>
+<p>rule_id: phpinfo-use</p>
+<p>message: The 'phpinfo' function may reveal sensitive information about your environment.</p>
+<p>cwe: ['CWE-200: Exposure of Sensitive Information to an Unauthorized Actor']</p>
+<hr>
+</div>
+
+
+
+<div class="result commit-details" style="display: none;">
+<p>Pull Request SHA:  d35f16df59f1791439492178b89903c647ea2490
+</p>
+<p>Author:  Rikaisfan2D
+</p>
+<p>Date:  2024-04-11 23:01:22</p>
+<p>State:  open
+File Change</p>
+<p>File Change:   eval-user.php</p>
+<p>No malicious commits were found</p>
+<hr>
+</div>
+
+
+
+<div class="result commit-details" style="display: none;">
+<p>Pull Request SHA:  2c439ba24dcfe0ec58d2fb8732d0feabfbd15bd4
+</p>
+<p>Author:  TTAT91A
+</p>
+<p>Date:  2024-04-08 21:01:12</p>
+<p>State:  open
+File Change</p>
+<p>File Change:   sum.php</p>
+<p>No malicious commits were found</p>
+<hr>
+</div>
+
+<h2>4/7 Commit were violated </h2>
