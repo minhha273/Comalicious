@@ -9,6 +9,19 @@ Use the package manager pip to install needed library in `requirements.txt`.
 pip install -r requirements.txt
 ```
 # Usage
+## Scan commits
+```
+python FMalGit.py -onl $github_link
+```
+where
+- `$github_link`: github repository link
+### Example
+```
+python FMalGit.py -onl https://github.com/minhha273/project
+```
+Here is the content of :
+![image](https://github.com/minhha273/Comalicious/assets/93338351/912ceab7-85c2-4e24-8acc-c583b7291f83)
+
 ## Get file contains all pull-request
 ```
 python FMalGit.py -cfpullreq $github_link
